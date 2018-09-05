@@ -1,0 +1,336 @@
+
+  body {
+    width: 500px;
+  }
+
+  /* HEADER */
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ece4d8; */
+    height: 200px;
+    /* box-sizing: border-box; */
+  }
+
+  .title h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
+    font-size: 50px;
+    color: rgb(97, 75, 52);
+    outline: 2px solid black;
+    outline-offset: 5px;
+    width: 20%;
+  }
+  /* NAV BAR */
+  nav {
+    background: #866c53;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+  }
+
+  nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav  ul li {
+    display: inline;
+    padding: 3px 3px;
+  }
+
+  nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 200;
+  }
+
+  nav ul li p {
+    display: inline;
+    padding: 2px 2px;
+  }
+
+  nav ul li h2 {
+    font-family: "Courier New", Courier, monospace;
+    display: inline;
+    padding: 10px 10px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+  }
+
+  /* MAIN */
+  main{
+    background: #ece4d8);
+  }
+  /* MAIN//TILES */
+  .tiles {
+    /* height: 150px; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  /* .tiles .GRAIN {
+    background-image: url("/CSS/Img/grains.jpeg");
+    background-color: #cccccc;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  } */
+
+  .tiles:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .tiles .GRAIN img, .tiles .AROMA img, .tiles .TASTE img, .tiles .STRENGTH img {
+    /* width: 100%; */
+    height: 175px;
+    box-sizing: border-box;
+  }
+
+  .text {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:center;
+    align-items: center;
+    color: white;
+    /* padding: 2px 10px; */
+  }
+
+  div .text {
+    display: flex;
+  }
+
+  .text h3 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    background: white;
+    padding: 10px;
+  }
+
+  .text a {
+    color: #ece4d8;
+    text-decoration: none;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #866c53;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+  }
+
+/* @media query*/
+
+@media screen and (min-width:500px) and (max-width: 1200px) {
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
+
+    /* HEADER */
+  .container{
+    background-image: url("/CSS/Img/head.jpg");
+    /* background-color: #cccccc; */
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .title{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-left: 190px;
+    /* display: inline; */
+  }
+
+  .title h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+    outline: 2px solid white;
+    outline-offset: 5px;
+    width: 50%;
+    /* position: absolute; */
+    display: block;
+    justify-content: center;
+    align-content: center;
+    /* box-sizing: border-box; */
+    position: fixed;
+  }
+
+  .title p{
+    font-family: cursive;
+    color: white;
+  }
+  /* NAV BAR */
+nav {
+  background: #866c53;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  /* height: 50px; */
+}
+
+  nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav  ul li {
+    display: inline;
+    padding: 10px 10px;
+  }
+
+  nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 200;
+  }
+
+  nav ul li a:hover {
+      background-color: #bf8847;
+  }
+
+  nav ul li p {
+    display: inline;
+    padding: 10px 10px;
+  }
+
+  nav ul li h2 {
+    font-family: "Courier New", Courier, monospace;
+    display: inline;
+    padding: 20px 20px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+  }
+  /* MAIN */
+main{
+  background: #ece4d8);
+  display: flex;
+}
+/* MAIN//TILES */
+.tiles {
+  flex-wrap: wrap;
+  width: 30%;
+  text-align: center;
+  box-sizing: border-box;
+  display:block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: auto;
+  padding: 0px 5px;
+}
+
+/* .tiles .GRAIN, .tiles .AROMA, .tiles .TASTE, .tiles .STRENGTH {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+/* .tiles .GRAIN {
+  background-image: url("/CSS/Img/grains.jpeg");
+  background-color: #cccccc;
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} */
+
+.tiles:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.tiles .GRAIN img, .tiles .AROMA img, .tiles .TASTE img, .tiles .STRENGTH img {
+  /* width: 100%; */
+  height: 175px;
+  box-sizing: border-box;
+}
+
+/* .tiles .GRAIN, .tiles .AROMA, .tiles .TASTE, .tiles .STRENGTH {
+  float: left;
+} */
+
+.text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  font-size: 15px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content:center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  /* padding: 2px 10px; */
+}
+
+div .text {
+  display: flex;
+}
+
+.text h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(148, 148, 148);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  background: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.text a {
+  color: #ece4d8;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #866c53;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+}
