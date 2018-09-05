@@ -170,6 +170,7 @@
     transform: translate(-50%, -50%);
     color: white;
     padding-left: 190px;
+    /* display: inline; */
   }
 
   .title h1 {
@@ -179,12 +180,13 @@
     color: white;
     outline: 2px solid white;
     outline-offset: 5px;
-    width: 100%;
+    width: 50%;
     /* position: absolute; */
     display: block;
     justify-content: center;
     align-content: center;
     /* box-sizing: border-box; */
+    position: fixed;
   }
 
   .title p{
@@ -296,6 +298,7 @@ main{
   justify-content:center;
   align-items: center;
   color: white;
+  box-sizing: border-box;
   /* padding: 2px 10px; */
 }
 
@@ -311,6 +314,7 @@ div .text {
   margin: 10px 0 20px;
   background: white;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .text a {
